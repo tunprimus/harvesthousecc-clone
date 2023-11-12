@@ -307,7 +307,48 @@ progress {
   flex-direction: column;
 }
 
+.break-row {
+  flex-basis: 100%;
+  height: 0;
+}
 
+.header {
+  display: block;
+}
+
+.header__nav-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__nav-list {
+  margin: 0 0.5rem;
+  overflow: hidden;
+}
+
+.header__nav-menu {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-toggle-label {
+  display: none;
+  height: 100%;
+  width: 2rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-toggle-input {
+  display: none;
+}
+
+
+.header__heading {
+  display: flex;
+}
 
 .image {
 	display: block;
@@ -332,4 +373,15 @@ progress {
 	font-size: 12px;
 }
 
+
+/* ----------------- */
+/*   MEDIA QUERIES   */
+/* ----------------- */
+
+@media screen and (min-width: 768px) {
+  .header__nav-group {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
