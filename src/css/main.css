@@ -1,0 +1,335 @@
+:root {
+  --hcc-blue: #2a3e77;
+  --hcc-blue: hsl(224, 48%, 32%);
+  --hcc-maroon: #961335;
+  --hcc-maroon: hsl(344, 78%, 33%);
+  --hcc-menu-colour: #a3a3a3;
+  --hcc-menu-colour: hsl(0, 0%, 64%);
+  --hcc-menu-background: #383838;
+  --hcc-menu-background: hsl(0, 0%, 22%);
+  --hcc-background-colour: #F3F2F1;
+	--hcc-background-colour: hsl(30, 8%, 95%);
+
+  --font-stack-body: Montserrat, -apple-system, BlinkMacSystemFont, ̈́"Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, SFProDisplay-Regular, Inter, "Fira Sans", "Open Sans", "Droid Sans", "Nimbus Sans", "DejaVu Sans", "Helvetica Neue", Arial, Helvetica, Poppins, Verdana, Tahoma, Arimo, sans-serif;
+
+  --custom-font-size-6: calc(1rem + (32 - 16) * ((100vw - 320px) / (2560 - 320)));
+
+  /* General ratios */
+	--golden-ratio: 1.618;
+	--perfect-fifth: 1.500;
+	--augmented-fourth: 1.414;
+	--perfect-fourth: 1.333;
+	--major-third: 1.250;
+	--minor-third: 1.200;
+	--major-second: 1.125;
+	--minor-second: 1.067;
+
+	--font-scale-ratio: var(/**/); /* input one of the above */
+	/* >>> Modular scale: https://every-layout.dev/rudiments/modular-scale/ */
+	--fs-5: calc(var(--fs-4) / var(--font-scale-ratio));
+	--fs-4: calc(var(--fs-3) / var(--font-scale-ratio));
+	--fs-3: calc(var(--fs-2) / var(--font-scale-ratio));
+	--fs-2: calc(var(--fs-1) / var(--font-scale-ratio));
+	--fs-1: calc(var(--fs0) / var(--font-scale-ratio));
+	--fs0: var(--custom-font-size-6);
+	--fs1: calc(var(--fs0) * var(--font-scale-ratio));
+	--fs2: calc(var(--fs1) * var(--font-scale-ratio));
+	--fs3: calc(var(--fs2) * var(--font-scale-ratio));
+	--fs4: calc(var(--fs3) * var(--font-scale-ratio));
+	--fs5: calc(var(--fs4) * var(--font-scale-ratio));
+
+  /* https://matthewjamestaylor.com/responsive-padding */
+	--responsive-space--ex-large: calc(12px + 1.5625vw);
+  --responsive-space--large: calc(12px + 1.5625vw);
+  --responsive-space: calc(8px + 1.5625vw);
+	--responsive-space--medium: calc(6px + 1.5625vw);
+	--responsive-space--small: calc(4px + 1.5625vw);
+	--responsive-space--ex-small: calc(2px + 1.5625vw);
+	--responsive-space--tiny: calc(0.1px + 0.5625vw);
+
+  --border-radius--ex-small: 0.25rem;
+  --border-radius--small: 0.5rem;
+  --border-radius: 1rem;
+  --border-radius--large: 1.5rem;
+  --border-radius--ex-large: 3rem;
+  --border-radius--circle: 50%;
+}
+
+
+/* -------------------------------------- */
+/*              RESETS                    */
+/* -------------------------------------- */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+*::before,
+*::after {
+	text-decoration: inherit;
+	vertical-align: inherit;
+}
+
+* + * {
+  margin-top: 0.5rem;
+}
+
+html {
+  font-size: var(--custom-font-size-6);
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+	font-family: var(--font-stack-body);
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+p {
+	max-width: 65ch;
+}
+
+/* HTML5 blocks - needed in older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+	list-style-position: unset;
+}
+
+ol[role="list"],
+ul[role="list"] {
+	list-style: none;
+	list-style-position: unset;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+	display: inline-block;
+	background-color: transparent;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+audio, img, picture, video, iframe, canvas, object, embed, svg  {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-style: none;
+	/* vertical-align: middle; */
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+svg {
+	fill: currentColor;
+	overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+	font: inherit;
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+	appearance: button;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+input[type="button"] {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+	font-size: 16px;
+}
+
+button {
+	border: none;
+	border-radius: 0.8rem;
+	font-family: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button[disabled] {
+	background-color: inherit;
+	background-color: var(--dual-theme-grey);
+	opacity: 0.5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+p, li, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+sup, sub {
+	line-height: 0;
+}
+
+table {
+	border-color: inherit;
+	border-collapse: collapse;
+	text-indent: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+textarea:not([rows]) {
+	min-height: 10rem;
+}
+
+details summary {
+	cursor: pointer;
+}
+
+hr {
+	color: inherit;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	appearance: textfield;
+	outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+:is(a, button, input, textarea, summary) {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentColor;
+}
+
+:is(a, button, input, textarea, summary):focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary):focus:not(:focus-visible) {
+  outline: none;
+}
+
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/* For frameworks */
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/*-- End of Resets --*/
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.image {
+	display: block;
+	font-family: sans-serif;
+	font-weight: 300;
+	height: auto;
+	line-height: 1.1;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.image::before {
+	content: "Sorry, this image is unavailable.";
+	display: block;
+	margin-bottom: 8px;
+}
+
+.image::after {
+	content: "(url: " attr(src) ")";
+	display: block;
+	font-size: 12px;
+}
+
+
