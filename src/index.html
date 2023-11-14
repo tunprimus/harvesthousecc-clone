@@ -10,41 +10,45 @@
 <body class="body">
   <div class="wrapper">
     <header class="header">
-      <nav class="header__nav-menu">
-        <input type="checkbox" name="nav-toggle-input" id="nav-toggle-input" class="header__nav-toggle-input nav-toggle-input">
-        <label for="nav-toggle-input" class="header__nav-toggle-label nav-toggle-label"><span class="header__nav-toggle-icon nav-toggle-icon">&#x2630;</span></label>
-        <ul class="header__nav-group">
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Home</a></li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">About</a></li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Ministries</a>
-            <ul class="header__ministries">
-              <li class="header__ministries-list"><a href="#" class="header__ministries-link">Men's Ministry</a></li>
-              <li class="header__ministries-list"><a href="#" class="header__ministries-link">Women's Ministry</a></li>
-              <li class="header__ministries-list"><a href="#" class="header__ministries-link">Children's Ministry</a></li>
+      <!-- (A) MENU WRAPPER -->
+      <nav class="header__nav nav__menu">
+        <!-- (B) THE HAMBURGER -->
+        <label for="nav__toggle" class="nav__toggle nav__toggle-label">&#9776;</label>
+        <input type="checkbox" name="nav__toggle" id="nav__toggle" class="nav__toggle nav__toggle-input">
+
+        <!-- (C) MENU ITEMS -->
+        <ul class="nav__group">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Ministries</a>
+            <ul class="ministries">
+              <li class="ministries__item"><a href="#" class="ministries__link">Men's Ministry</a></li>
+              <li class="ministries__item"><a href="#" class="ministries__link">Women's Ministry</a></li>
+              <li class="ministries__item"><a href="#" class="ministries__link">Children's Ministry</a></li>
             </ul>
           </li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Events</a>
-            <ul class="header__events">
-              <li class="header__events-list"><a href="#" class="header__events-link">Thrive</a></li>
-              <li class="header__events-list"><a href="#" class="header__events-link">Shift</a></li>
-              <li class="header__events-list"><a href="#" class="header__events-link">Ministers' Engage</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Events</a>
+            <ul class="events">
+              <li class="events__item"><a href="#" class="events__link">Thrive</a></li>
+              <li class="events__item"><a href="#" class="events__link">Shift</a></li>
+              <li class="events__item"><a href="#" class="events__link">Ministers' Engage</a></li>
             </ul>
           </li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Campuses</a>
-            <ul class="header__campuses">
-              <li class="header__campuses-list"><a href="#" class="header__campuses-link">Alpha Cathedral</a></li>
-              <li class="header__campuses-list"><a href="#" class="header__campuses-link">Metro Church</a></li>
-              <li class="header__campuses-list"><a href="#" class="header__campuses-link">Life Centre</a></li>
-              <li class="header__campuses-list"><a href="#" class="header__campuses-link">CEDARS</a></li>
-              <li class="header__campuses-list"><a href="#" class="header__campuses-link">Grace Arena</a></li>
-              <li class="header__campuses-list"><a href="#" class="header__campuses-link">The Novus Centre</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Campuses</a>
+            <ul class="campuses">
+              <li class="campuses__item"><a href="#" class="campuses__link">Alpha Cathedral</a></li>
+              <li class="campuses__item"><a href="#" class="campuses__link">Metro Church</a></li>
+              <li class="campuses__item"><a href="#" class="campuses__link">Life Centre</a></li>
+              <li class="campuses__item"><a href="#" class="campuses__link">CEDARS</a></li>
+              <li class="campuses__item"><a href="#" class="campuses__link">Grace Arena</a></li>
+              <li class="campuses__item"><a href="#" class="campuses__link">The Novus Centre</a></li>
             </ul>
           </li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Contact</a></li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Confessions</a></li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">HCC FC</a></li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Store</a></li>
-          <li class="header__nav-list"><a href="#" class="header__nav-link">Livestream</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Confessions</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">HCC FC</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Store</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Livestream</a></li>
         </ul>
       </nav>
       <video src="" class="video header__video break-row"></video>
@@ -128,7 +132,7 @@
         <h2 class="featured-events__heading">Featured Events</h2>
         <div class="featured-events__image-container"></div>
       </section>
-      <section class="address-posts-links">
+      <section class="address-posts__links">
         <div class="apl__card">Church Address</div>
         <div class="apl__card">Recent Posts</div>
         <div class="apl__card">Campuses</div>

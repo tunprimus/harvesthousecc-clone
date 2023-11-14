@@ -69,7 +69,11 @@
 	background-repeat: no-repeat;
   max-width: 100%;
   overflow-x: hidden;
-  position: relative;
+	-o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 *::before,
@@ -312,42 +316,47 @@ progress {
   height: 0;
 }
 
-.header {
-  display: block;
+/* Navigation */
+/* [ON SMALL SCREENS] */
+/* (A) BREAK INTO VERTICAL MENU */
+.nav__item,
+.ministries__item,
+.events__item,
+.campuses__item {
+	display: block;
+	width: 100%;
+	border-top: 1px solid #333333;
 }
 
-.header__nav-group {
-  display: flex;
-  flex-direction: row;
+/* (B) SHOW HAMBURGER ICON */
+.nav__toggle-label {
+	display: inline-block;
+	position: absolute;
+	top: 0.1rem;
+	right: 0.1rem;
+	color: white;
+	background-color: #a02620;
+	font-style: normal;
+	font-size: 1.2rem;
+	padding: 0.8rem;
+	cursor: pointer;
 }
 
-.header__nav-list {
-  margin: 0 0.5rem;
-  overflow: hidden;
-}
-
-.header__nav-menu {
-  display: flex;
-  align-items: flex-start;
-}
-
-.nav-toggle-label {
-  display: none;
-  height: 100%;
-  width: 2rem;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#nav-toggle-input {
-  display: none;
+.nav__toggle-input {
+	position: absolute;
+	top: -100%;
+	left: -100%
 }
 
 
-.header__heading {
-  display: flex;
+/* (C) TOGGLE SHOW/HIDE MENU */
+.nav__group {
+	display: none;
+}
+
+.nav__toggle-input:checked ~ .nav__group {
+	display: block;
+	margin-top: 3rem;
 }
 
 .image {
@@ -379,9 +388,34 @@ progress {
 /* ----------------- */
 
 @media screen and (min-width: 768px) {
-  .header__nav-group {
-    display: flex;
-    flex-direction: row;
+	/* (A) MENU WRAPPER */
+  .header__nav {
+    width: 100%;
+    background-color: #000000;
   }
+
+	/* (B) HORIZONTAL MENU ITEMS */
+	.nav__group {
+		display: flex;
+	}
+
+	.nav__item {
+		flex-grow: 1;
+		flex-basis: 0;
+		padding: 0.5rem;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.nav__item:hover {
+		background-color: #af0d0d;
+	}
+
+	/* (C) HIDE HAMBURGER */
+	.nav__toggle-label,
+	.nav__toggle-input {
+		display: none;
+	}
 }
 
