@@ -329,7 +329,6 @@ progress {
 .campuses__item {
 	display: block;
 	width: 100%;
-	/* border-top: 1px solid #333333; */
 }
 
 .nav__item {
@@ -337,12 +336,12 @@ progress {
 }
 
 .nav__link {
-	min-width: 13ch;
+	min-width: 6.5rem;
 	min-height: 44px;
 	min-height: 2.5ch;
 	max-width: 75%;
 	margin: 0;
-	padding: 0.25rem 0.25rem;
+	padding: 0.25rem;
 	font-size: 0.8rem;
 	font-weight: bold;
 	text-align: center;
@@ -356,6 +355,48 @@ progress {
 .nav__link:hover {
 	background-color: var(--hcc-maroon);
 	color: white;
+}
+
+.level-2-nav__link {
+	position: relative;
+}
+
+.ministries,
+.events,
+.campuses {
+	width: 100%;
+	width: max-content;
+	padding: 0.5rem;
+	background-color: var(--hcc-menu-colour);
+	display: none;
+}
+
+.ministries__item,
+.events__item,
+.campuses__item {
+	width: 100%;
+	display: block;
+}
+
+.ministries__link,
+.events__link,
+.campuses__link {
+	padding: 0.25rem;
+	font-size: 0.8rem;
+}
+
+.ministries__link:hover,
+.events__link:hover,
+.campuses__link:hover {
+	background-color: var(--hcc-maroon);
+	color: white;
+	font-size: 1rem;
+}
+
+.level-2-nav__item:hover .ministries,
+.level-2-nav__item:hover .events,
+.level-2-nav__item:hover .campuses {
+	display: block;
 }
 
 .level-2-nav__link::after {
@@ -438,6 +479,7 @@ progress {
 	/* (B) HORIZONTAL MENU ITEMS */
 	.nav__group {
 		display: flex;
+		flex-wrap: wrap;
 		padding-left: 0.15rem;
 		padding-right: 0.15rem;
 	}
