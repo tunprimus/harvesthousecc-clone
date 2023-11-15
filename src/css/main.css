@@ -358,6 +358,18 @@ progress {
 	color: white;
 }
 
+.level-2-nav__link::after {
+	content: "\27A4";
+	text-decoration: none;
+	margin-left: 0.05rem;
+	transition: transform 0.3s ease-in-out;
+	position: absolute;
+}
+
+.level-2-nav__link:hover::after {
+	transform: rotate(90deg);
+}
+
 /* (B) SHOW HAMBURGER ICON */
 .nav__toggle-label {
 	display: inline-block;
