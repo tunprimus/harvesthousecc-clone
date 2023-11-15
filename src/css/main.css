@@ -316,6 +316,10 @@ progress {
   height: 0;
 }
 
+.header__nav {
+	background-color: var(--hcc-menu-background);
+}
+
 /* Navigation */
 /* [ON SMALL SCREENS] */
 /* (A) BREAK INTO VERTICAL MENU */
@@ -325,7 +329,33 @@ progress {
 .campuses__item {
 	display: block;
 	width: 100%;
-	border-top: 1px solid #333333;
+	/* border-top: 1px solid #333333; */
+}
+
+.nav__item {
+	margin: 0;
+}
+
+.nav__link {
+	min-width: 13ch;
+	min-height: 44px;
+	min-height: 2.5ch;
+	max-width: 75%;
+	margin: 0;
+	padding: 0.25rem 0.25rem;
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: var(--border-radius);
+}
+
+.nav__link:link {
+	background-color: var(--hcc-background-colour);
+}
+
+.nav__link:hover {
+	background-color: var(--hcc-maroon);
+	color: white;
 }
 
 /* (B) SHOW HAMBURGER ICON */
@@ -391,12 +421,13 @@ progress {
 	/* (A) MENU WRAPPER */
   .header__nav {
     width: 100%;
-    background-color: #000000;
   }
 
 	/* (B) HORIZONTAL MENU ITEMS */
 	.nav__group {
 		display: flex;
+		padding-left: 0.15rem;
+		padding-right: 0.15rem;
 	}
 
 	.nav__item {
@@ -405,11 +436,6 @@ progress {
 		padding: 0.5rem;
 		color: white;
 		text-decoration: none;
-		text-align: center;
-	}
-
-	.nav__item:hover {
-		background-color: #af0d0d;
 	}
 
 	/* (C) HIDE HAMBURGER */
