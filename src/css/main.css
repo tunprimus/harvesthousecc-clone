@@ -53,6 +53,8 @@
   --border-radius--large: 1.5rem;
   --border-radius--ex-large: 3rem;
   --border-radius--circle: 50%;
+
+	--column-width: 30ch;
 }
 
 
@@ -306,9 +308,28 @@ progress {
 
 /*-- End of Resets --*/
 
+
+/* ------------------ */
+/*       CLASSES      */
+/* ------------------ */
+
 .body {
   display: flex;
   flex-direction: column;
+}
+
+.flexbox-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.flexbox-grid > * {
+	flex: 1 1 var(--column-width);
+}
+
+.flexbox-grid > * + * {
+	margin: 1rem;
 }
 
 .break-row {
