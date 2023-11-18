@@ -463,9 +463,15 @@ progress {
 	margin-top: 3rem;
 }
 
+.vision-mission-wrapper__image {
+	min-width: 30vw;
+}
+
 .vision-mission__image {
 	min-width: 100%;
+	height: auto;
 	object-fit: cover;
+	object-position: center;
 }
 
 .vision-mission__heading {
@@ -474,11 +480,13 @@ progress {
 	padding: 0.5rem 0.75rem;
 	text-align: center;
 	margin-top: 0;
+	word-wrap: normal;
 }
 
 .vision-mission-alone {
 	background-color: var(--hcc-maroon);
 	padding: 0.5rem 0.75rem;
+	word-wrap: normal;
 }
 
 .vision-mission-alone__heading {
