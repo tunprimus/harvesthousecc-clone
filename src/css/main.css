@@ -608,6 +608,109 @@ progress {
 	font-weight: 300;
 }
 
+.sermon-videos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sermon-videos__heading {
+	background-color: var(--hcc-blue);
+	color: white;
+	padding: 0.5rem 0.75rem;
+	text-align: center;
+	text-transform: capitalize;
+	word-wrap: normal;
+}
+
+.sermon-videos__container {
+	max-width: 70vw;
+}
+
+
+
+.featured-events {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* .featured-events__image-container {} */
+
+.featured-events__image-container {
+	--layout-min: 15rem;
+
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 1rem -0.5rem;
+}
+
+.featured-events__image-container > * {
+	flex: 1 1 var(--layout-min);
+	margin: 0.5rem;
+}
+
+.featured-events__image--1,
+.featured-events__image--2,
+.featured-events__image--3,
+.featured-events__image--4,
+.featured-events__image--5,
+.featured-events__image--6 {
+	margin: 0;
+	padding: 0;
+	max-width: 33vw;
+	object-fit: cover;
+}
+
+.featured-events__image--1,
+.featured-events__image--2,
+.featured-events__image--3,
+.featured-events__image--4,
+.featured-events__image--5,
+.featured-events__image--6 {
+	object-fit: cover;
+}
+
+/* 
+.featured-events__image--1 {
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featured-events__image--2 {
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featured-events__image--3 {
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.featured-events__image--4 {
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.featured-events__image--5 {
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.featured-events__image--6 {
+	background-image: url('');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+ */
 
 /* ----------------- */
 /*   MEDIA QUERIES   */
