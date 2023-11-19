@@ -54,7 +54,17 @@
   --border-radius--ex-large: 3rem;
   --border-radius--circle: 50%;
 
+	/* Column size */
+	--grid-min: 20ch;
+	--flex-min: 35rem;
+	--pancake-min: var(--grid-min);
+	--max-number-of-column: 4;
+	--breakpoint-size: 480;
 	--column-width: 30ch;
+
+	--flexbox-albatross-margin: 1rem;
+	--flexbox-albatross-container-size: 40rem;
+	--flexbox-albatross-modifier: calc(var(--flexbox-albatross-container-size) - 100%);
 }
 
 
@@ -155,6 +165,12 @@ audio, img, picture, video, iframe, canvas, object, embed, svg  {
 	height: auto;
 	border-style: none;
 	/* vertical-align: middle; */
+}
+
+img {
+	width: auto\9;
+	width: inherit; /* This makes auto-resizing with max-width 100% and height auto work in IE8 */
+	max-height: 100%;
 }
 
 audio:not([controls]) {
@@ -494,6 +510,42 @@ progress {
 	color: white;
 	padding: 0.5rem 0.75rem;
 	text-align: center;
+}
+
+.sunday-service {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sunday-service__heading {
+	background-color: var(--hcc-blue);
+	color: white;
+	padding: 0.5rem 0.75rem;
+	text-align: center;
+	word-wrap: normal;
+}
+
+.sunday-service__cards-wrapper {
+	--layout-min: 15rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem -0.5rem;
+}
+
+.sunday-service__cards-wrapper > * {
+	flex: 1 1 var(--layout-min);
+	margin: 0.5rem;
+}
+
+.sunday-service__card--1 {
+	background-image: url('../src/image/default-main/0003-background-pix-alpha-cathedral-160w.png');
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto;
 }
 
 
