@@ -640,7 +640,7 @@ progress {
 .featured-events__image-container {
 	--layout-min: 15rem;
 
-	display: inline-flex;
+	display: flex;
 	flex-wrap: wrap;
 	margin: 1rem -0.5rem;
 }
@@ -658,16 +658,6 @@ progress {
 .featured-events__image--6 {
 	margin: 0;
 	padding: 0;
-	max-width: 33vw;
-	object-fit: cover;
-}
-
-.featured-events__image--1,
-.featured-events__image--2,
-.featured-events__image--3,
-.featured-events__image--4,
-.featured-events__image--5,
-.featured-events__image--6 {
 	object-fit: cover;
 }
 
