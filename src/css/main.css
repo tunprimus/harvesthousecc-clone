@@ -540,11 +540,73 @@ progress {
 	margin: 0.5rem;
 }
 
+.sunday-service__card--1,
+.sunday-service__card--2,
+.sunday-service__card--3,
+.sunday-service__card--4,
+.sunday-service__card--5,
+.sunday-service__card--6 {
+	padding: var(--responsive-space--medium);
+	font-size: 0.8rem;
+	color: white;
+}
+
 .sunday-service__card--1 {
 	background-image: url('../image/default-main/0003-background-pix-alpha-cathedral-160w.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
+}
+
+.sunday-service__card--2 {
+	background-image: url('../image/default-main/0004-background-pix-life-centre-160w.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.sunday-service__card--3 {
+	background-image: url('../image/default-main/0005-background-pix-metro-church-160w.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.sunday-service__card--4 {
+	background-image: url('../image/default-main/0006-background-pix-novus-centre-160w.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.sunday-service__card--5 {
+	background-image: url('../image/default-main/0007-background-pix-cedars-house-of-grace-160w.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.sunday-service__card--6 {
+	background-image: url('../image/default-main/0004-background-pix-grace-arena-160w.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.sunday-service__title,
+.sunday-service__intro {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.sunday-service__intro {
+	font-size: 0.8rem;
 }
 
 
