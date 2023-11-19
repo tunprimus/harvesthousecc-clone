@@ -642,3 +642,14 @@ progress {
 	}
 }
 
+@media screen and (min-width: 1028px) {
+	.sunday-service__card--2 {
+		height: 80%;
+		align-self: flex-end;
+	}
+
+	.sunday-service__card--5 {
+		min-height: 120%;
+	}
+}
+
