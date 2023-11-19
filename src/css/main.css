@@ -541,11 +541,10 @@ progress {
 }
 
 .sunday-service__card--1 {
-	background-image: url('../src/image/default-main/0003-background-pix-alpha-cathedral-160w.png');
+	background-image: url('../image/default-main/0003-background-pix-alpha-cathedral-160w.png');
 	background-position: center center;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 }
 
 
