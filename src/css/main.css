@@ -691,6 +691,20 @@ progress {
 }
  */
 
+
+.address-posts-links {
+	--layout-min: 18rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem -2rem;
+}
+
+.address-posts-links > * {
+	flex: 1 1 var(--layout-min);
+	margin: 2rem;
+}
+
 /* ----------------- */
 /*   MEDIA QUERIES   */
 /* ----------------- */
