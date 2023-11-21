@@ -722,6 +722,16 @@ progress {
 	font-weight: 500;
 }
 
+.apl__icon {
+	margin-right: 0.25rem;
+	color: white;
+}
+
+.apl__icon--location {
+	display: inline-block;
+	transform: rotate(-45deg);
+}
+
 
 
 /* ----------------- */
