@@ -737,6 +737,22 @@ progress {
 	margin-top: 0;
 }
 
+.campuses--bottom {
+	list-style: none;
+	color: white;
+	padding-left: 0;
+}
+
+.campuses__item--bottom {
+	list-style: none;
+	color: white;
+}
+
+.campuses__link--bottom {
+	color: white;
+	text-decoration-color: var(--hcc-menu-background);
+}
+
 
 
 /* ----------------- */
