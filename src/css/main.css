@@ -753,6 +753,12 @@ progress {
 	text-decoration-color: var(--hcc-menu-background);
 }
 
+.campuses__link--bottom:hover {
+	background-color: var(--hcc-background-colour);
+	color: var(--hcc-menu-background);
+	text-decoration-color: white;
+}
+
 
 
 /* ----------------- */
