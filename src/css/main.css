@@ -662,12 +662,7 @@ progress {
 	margin: 0;
 }
 
-.featured-events__image--1,
-.featured-events__image--2,
-.featured-events__image--3,
-.featured-events__image--4,
-.featured-events__image--5,
-.featured-events__image--6 {
+.featured-events__image {
 	margin: 0;
 	padding: 0;
 	object-fit: cover;
