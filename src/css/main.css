@@ -98,6 +98,17 @@
   margin-top: 0.5rem;
 }
 
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/Montserrat-Regular.eot");
+	src: local("Montserrat"),
+		url("../fonts/montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"),
+		url("../fonts/montserrat/Montserrat-Regular.woff") format("woff"),
+		url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+	font-display: optional;
+}
+
 html {
   font-size: var(--custom-font-size-6);
 	scroll-behavior: smooth;
