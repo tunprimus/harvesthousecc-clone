@@ -344,6 +344,12 @@ progress {
 .body {
   display: flex;
   flex-direction: column;
+	background-color: black;
+}
+
+.wrapper {
+	background-color: var(--hcc-background-colour);
+	margin: auto;
 }
 
 .flexbox-grid {
@@ -655,6 +661,8 @@ progress {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1rem -0.5rem;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .featured-events__image-container > * {
@@ -697,13 +705,24 @@ progress {
 
 	display: flex;
 	flex-wrap: wrap;
-	margin: 2rem -2rem;
+	/* margin: 2rem -2rem; */
+	background-color: var(--hcc-menu-background);
+	color: white;
+	margin-top: 0;
 }
 
 .address-posts-links > * {
 	flex: 1 1 var(--layout-min);
 	margin: 2rem;
 }
+
+.apl__title {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+
 
 /* ----------------- */
 /*   MEDIA QUERIES   */
