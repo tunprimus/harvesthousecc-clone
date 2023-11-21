@@ -732,6 +732,11 @@ progress {
 	transform: rotate(-45deg);
 }
 
+.apl__text--location2 {
+	margin-left: 1.20rem;
+	margin-top: 0;
+}
+
 
 
 /* ----------------- */
