@@ -737,18 +737,21 @@ progress {
 	margin-top: 0;
 }
 
-.campuses--bottom {
+.campuses--bottom,
+.useful-links {
 	list-style: none;
 	color: white;
 	padding-left: 0;
 }
 
-.campuses__item--bottom {
+.campuses__item--bottom,
+.useful-links__item {
 	list-style: none;
 	color: white;
 }
 
-.campuses__link--bottom {
+.campuses__link--bottom,
+.useful-links__link {
 	color: white;
 	text-decoration-color: var(--hcc-menu-background);
 }
@@ -756,6 +759,19 @@ progress {
 .campuses__link--bottom:focus,
 .campuses__link--bottom:hover {
 	padding: 0.1rem 0.5rem;
+	background-color: var(--hcc-background-colour);
+	color: var(--hcc-menu-background);
+	text-decoration-color: white;
+}
+
+.useful-links__item::before {
+	content: "\1F517";
+	margin-right: 0.5rem;
+}
+
+.useful-links__link:focus,
+.useful-links__link:hover {
+	font-weight: bold;
 	background-color: var(--hcc-background-colour);
 	color: var(--hcc-menu-background);
 	text-decoration-color: white;
