@@ -777,6 +777,20 @@ progress {
 	text-decoration-color: white;
 }
 
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--hcc-menu-background);
+	color: white;
+	margin-top: 0.1rem;
+}
+
+.footer__item {
+	font-size: 0.8rem;
+	text-align: center;
+}
+
 
 
 /* ----------------- */
