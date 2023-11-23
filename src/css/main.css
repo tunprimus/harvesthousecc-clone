@@ -499,6 +499,7 @@ progress {
 
 .vision-mission-wrapper__image {
 	min-width: 30vw;
+	margin-left: var(--responsive-space--small);
 }
 
 .vision-mission__image {
