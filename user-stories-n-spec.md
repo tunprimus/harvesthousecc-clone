@@ -85,9 +85,9 @@
 
 [] Use JSDoc comments. This can be easily used with a type checker for static type analysis.
 
-[] 
+[] Using id="video-title-link" can help locate links that contain title and URL for the videos on Rev's channel at https://www.youtube.com/@NiyiEboda/videos.
 
-[] 
+[] Fetch the top 4 videos weekly and use that to populate the recent videos iframe.
 
 [] 
 
@@ -95,7 +95,7 @@
 
 [] Prefer to use a JAMstack to reduce hosting cost to organisation.
 
-[] Attempt to use frondend sqlite or JSON for storage during current implementation.
+[] Attempt to use frontend sqlite or JSON for storage during current implementation.
 
 [] 
 
