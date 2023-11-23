@@ -643,10 +643,21 @@ progress {
 }
 
 .sermon-videos__container {
-	max-width: 70vw;
+	max-width: 85vw;
 }
 
+/* .sermon-videos__reel {
+	--reel-min: 5rem;
 
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem -1rem;
+}
+
+.sermon-videos__reel > * {
+	flex: 0.5 1 var(--reel-min);
+	margin: 1rem;
+} */
 
 .featured-events {
 	display: flex;
@@ -797,6 +808,21 @@ progress {
 /* ----------------- */
 /*   MEDIA QUERIES   */
 /* ----------------- */
+
+@media screen and (min-width: 480px) {
+	.sermon-videos__reel {
+		--reel-min: 5rem;
+	
+		display: flex;
+		flex-wrap: wrap;
+		margin: 2rem -1rem;
+	}
+	
+	.sermon-videos__reel > * {
+		flex: 1 1 var(--reel-min);
+		margin: 1rem;
+	}
+}
 
 @media screen and (min-width: 768px) {
 	/* (A) MENU WRAPPER */
