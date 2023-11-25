@@ -89,6 +89,12 @@
 
 [] Fetch the top 4 videos weekly and use that to populate the recent videos iframe.
 
+[] Channel ID = UCWp3V0pGzOZy_an6ZsSUFiw
+
+[] RSS URL = https://www.youtube.com/feeds/videos.xml?channel_id=UCWp3V0pGzOZy_an6ZsSUFiw
+
+[] 
+
 [] 
 
 ### Data Storage & Backend
