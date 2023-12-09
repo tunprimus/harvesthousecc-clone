@@ -499,7 +499,9 @@ progress {
 
 .video-wrapper {
 	position: relative;
-	width: 100%;
+	width: 100vw;
+	height: 56.24vw; /* 1.778, 16:9 aspect ratio*/
+	max-height: 40vmax;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -508,16 +510,13 @@ progress {
 }
 
 .header__video {
-	min-width: 100%;
+	width: 100vw;
 	min-height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
 	object-position: center;
 	object-fit: cover;
-	z-index: 1;
 }
 
 .vision-mission-wrapper__image {
