@@ -495,6 +495,8 @@ progress {
 .nav__toggle-input:checked ~ .nav__group {
 	display: block;
 	margin-top: 3rem;
+	padding-left: 30%;
+	padding-right: 30%;
 }
 
 .video-wrapper {
