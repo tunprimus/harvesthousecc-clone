@@ -497,6 +497,29 @@ progress {
 	margin-top: 3rem;
 }
 
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.header__video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	object-position: center;
+	object-fit: cover;
+	z-index: 1;
+}
+
 .vision-mission-wrapper__image {
 	min-width: 30vw;
 	margin-left: var(--responsive-space--small);
