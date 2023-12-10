@@ -848,6 +848,10 @@ progress {
 	margin-right: auto;
 }
 
+.sermon-videos__title {
+	margin-top: 7.5rem;
+}
+
 /* .sermon-videos__reel {
 	--reel-min: 5rem;
 
