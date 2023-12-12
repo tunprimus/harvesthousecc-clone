@@ -23,8 +23,8 @@
 }
 
 .about-header__heading {
-  max-width: 50vw;
-  font-size: 8vw;
+  max-width: 40vw;
+  font-size: 3vw;
 	color: white;
   background-color: var(--hcc-blue);
 	text-transform: uppercase;
@@ -34,7 +34,7 @@
 	left: 25%;
 	right: 25%;
   align-self: center;
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
 
 .about-vision-mission {
@@ -73,4 +73,69 @@
 .about-vision-mission__title {
   font-size: 1.25rem;
   text-transform: uppercase;
+}
+
+.about-core-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-core-values__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+}
+
+.about-core-values__list {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.about-core-values__list-item::before {
+  content: "\2714";
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.about-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-history__image {
+  width: 100vw;
+  height: auto;
+  margin-top: 0;
+  object-fit: fill;
+}
+
+.about-history__text-container {
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.about-history__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.about-history__para {
+  font-size: 0.9rem;
+}
+
+
+/*               */
+/* Media queries */
+/*               */
+
+@media screen and (min-width: 768px) {
+  .about-history__para {
+    font-size: 0.8rem;
+  }
 }
