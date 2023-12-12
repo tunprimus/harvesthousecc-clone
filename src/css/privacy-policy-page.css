@@ -1,0 +1,30 @@
+
+p {
+  max-width: 100ch;
+}
+
+.privacy-header-image-container {
+  width: 100%;
+  margin-top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy-header__heading {
+  color: white;
+}
+
+.privacy-main {
+  padding: 1rem;
+  line-height: 1.618;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.privacy__text,
+.privacy__list-item {
+  font-size: 0.8rem;
+}
