@@ -14,6 +14,18 @@
   flex-direction: column;
 }
 
+.nav__toggle-label,
+.nav__toggle-input,
+.nav__toggle-label--default,
+.nav__toggle-label--checked {
+	z-index: 2;
+}
+
+.about-header-image-container {
+  position: relative;
+  z-index: 0;
+}
+
 .about-header-image {
   width: 100vw;
   height: auto;
@@ -24,15 +36,15 @@
 
 .about-header__heading {
   max-width: 40vw;
-  font-size: 3vw;
+  font-size: 5vw;
+  font-weight: bold;
 	color: white;
   background-color: var(--hcc-blue);
 	text-transform: uppercase;
 	text-align: center;
 	position: absolute;
-	top: 25%;
-	left: 25%;
-	right: 25%;
+	top: 35%;
+	left: 35%;
   align-self: center;
   padding: 1rem;
 }
