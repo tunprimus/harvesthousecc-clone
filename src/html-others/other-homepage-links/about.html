@@ -6,15 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About HCC</title>
   <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/about-page.css">
 </head>
-<body class="body">
-  <div class="wrapper">
-    <header class="header">
-      <div class="video-wrapper">
-        <!-- header-background -->
-      </div>
+<body class="body about-body">
+  <div class="wrapper about-wrapper">
+    <header class="header about-page-header">
+      <picture class="about-header-image">
+        <source srcset="../../../src/image/about-page/0001-about-background-1080w.png" media="(min-width: 800px)">
+        <img src="../../../src/image/about-page/0001-about-background-320w.png" alt="header background">
+      </picture>
 
-      <h1 class="header__heading fade-in-text">About Us</h1>
+      <h1 class="about-header__heading fade-in-text">About Us</h1>
 
       <!-- (A) MENU WRAPPER -->
       <nav class="header__nav nav__menu">
@@ -60,7 +62,23 @@
         </ul>
       </nav>
     </header>
-    <main class="about-main"></main>
+    <main class="about-main">
+      <section class="about-vision-mission">
+        <h1 class="h1 about-vision-mission__heading">Mission & Vision Statements</h1>
+        <div class="about-vision-mission__container flexbox-grid">
+          <picture class="about-vision-mission__image">
+            <source srcset="../../../src/image/about-page/0002-about-background-1080w.png" media="(min-width: 800px)">
+            <img src="../../../src/image/about-page/0002-about-background-320w.png" alt="vision mission background">
+          </picture>
+          <div class="about-vision-mission__texts">
+            <p class="about-vision-mission__para">We are a God-sensitive and seeker-friendly church in an environment and atmosphere where people’s needs are constantly being met; their minds empowered with the provision of relevant information and sustainable inspiration; their spirits fed, and men and women are stirred up into action with passion towards the fulfilment of their God-ordained destinies.</p>
+            <h3 class="about-vision-mission__title">Raising models. Empowering saints. Fulfilling destinies.</h3>
+          </div>
+        </div>
+      </section>
+      <section class="about-core-values"></section>
+      <section class="about-history"></section>
+    </main>
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__item">
