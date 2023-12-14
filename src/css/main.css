@@ -546,6 +546,7 @@ progress {
 	padding: 0.5rem;
 	background-color: var(--hcc-menu-colour);
 	display: none;
+	transform: translateY(-10%);
 }
 
 .ministries__item,
