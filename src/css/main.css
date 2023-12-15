@@ -529,7 +529,8 @@ progress {
 	background-color: var(--hcc-background-colour);
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
 	background-color: var(--hcc-maroon);
 	color: white;
 }
