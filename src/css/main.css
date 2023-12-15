@@ -165,8 +165,8 @@ ul[role="list"] {
 a,
 a:link,
 a:visited,
-a:focus,
 a:hover,
+a:focus,
 a:active {
 	display: inline-block;
 	background-color: transparent;
@@ -512,13 +512,17 @@ progress {
 	margin: 0;
 }
 
+.nav__group > * + * {
+	margin-top: 0.5rem;
+}
+
 .nav__link {
 	min-width: 6.5rem;
 	min-height: 44px;
 	min-height: 2.5ch;
 	max-width: 75%;
 	margin: 0;
-	padding: 0.25rem;
+	padding: 0.4rem 0.75rem;
 	font-size: 0.8rem;
 	font-weight: bold;
 	text-align: center;
@@ -529,14 +533,14 @@ progress {
 	background-color: var(--hcc-background-colour);
 }
 
-.nav__link:hover,
 .ministries__link:hover,
 .events__link:hover,
 .campuses__link:hover,
-.nav__link:focus,
+.nav__link:hover,
 .ministries__link:focus,
 .events__link:focus,
-.campuses__link:focus {
+.campuses__link:focus,
+.nav__link:focus {
 	background-color: var(--hcc-maroon);
 	color: white;
 }
@@ -553,7 +557,7 @@ progress {
 	padding: 0.5rem;
 	background-color: var(--hcc-menu-colour);
 	display: none;
-	transform: translateY(-10%);
+	transform: translateY(-15%);
 }
 
 .ministries__item,
