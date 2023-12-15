@@ -1025,7 +1025,7 @@ progress {
 /*   MEDIA QUERIES   */
 /* ----------------- */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479.25px) {
 	.sermon-videos__reel {
 		--reel-min: 5rem;
 	
@@ -1040,7 +1040,7 @@ progress {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.25px) {
 	/* (A) MENU WRAPPER */
   .header__nav {
     width: 100%;
@@ -1071,7 +1071,7 @@ progress {
 	}
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1027.25px) {
 	.sunday-service__card--2 {
 		height: 80%;
 		align-self: flex-end;
