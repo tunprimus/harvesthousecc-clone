@@ -1,28 +1,40 @@
 # HarvestHouse Christian Centre Website Clone 
-Brief project description 2-3 sentences.
-
-[//]: # (This may be the most platform independent comment)
+This is a clone of the HarvestHouse Christian Centre; in an attempt to move the original website to a lighter stack; moving away from Wordpress and heavy dose of inline scripts on the front-page.
+This will result in faster page load and reduced data use for both users and developers.
 
 ## Table of Contents
 
-[//]: # (This is optional)
-
-[//]: # (A table of contents is good if you have a lengthy README and can help users navigate to sections quickly but is not a must have.)
-
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Installing](#installing)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [Acknowledgement](#acknowledgement)
+- [Licence](#licence)
 
 ## About / Project Description
-Write about 1-2 paragraphs describing the purpose of your project.
-
-[//]: # (This is an important part of your project and what many developers and non-developers will look at. It is vital to have the most accurate and correct information. The description needs to be well written with no grammar errors and that is readable to users of multiple backgrounds. It is important to put some time and thought into writing the description of the project. It does not need to be long but needs to summarise the project. What does your app do? What tech did you use?)
+Attempt to rebuild the organisation website using proven lightweight and backward compatible technologies.
 
 ### Architectural Philosophy
 
-[//]: # (How is it built? What are the main tools powering it? Why were those choices made?)
+ALWAYS minimise data usage for the end-user.
+ALWAYS optimise for low-resource settings.
+
+Thus:
+
+- HTML-first approach to website development;
+- Responsive pages by default;
+- Use semantic HTML in markup;
+- Ensure HTML delivers adequate information for low-end and/or old devices;
+- Aim for full accessibility;
+- Host preferred fonts locally;
+- Use such self-hosted fonts first before using system fonts;
+- Prefer Unicode HTML special entities to SVG icons;
+- Choose self-hosted SVG icons to online alternatives;
+- Use different image resolutions;
+- Prefer BEM naming convention in CSS stylesheets;
+- Use browsers' CSS defaults as much as possible to minimise CSS download size;
+- Minimise JavaScript usage and prefer vanilla JavaScript;
+- Prefer ES6 or ES5 syntax and features to ensure widespread compatibilities;
+- Use JSDoc comments for static type analysis if need be; in order to negate the use of Typescript language;
+- Aim for JAMstack to reduce hosting cost for the organisation.
 
 ### Project Structure
 
@@ -170,38 +182,17 @@ Write about 1-2 paragraphs describing the purpose of your project.
 
 ```
 
-[//]: # (How are the files organised and arranged.)
-
 ### Tools and Libraries
 
-[//]: # (If they’re third-party libraries, link to the docs. If they’re internal tools, include details on how they work.)
+- XnConvert: Batch conversion of original images to different resolutions;
+- GifCurry: Create animated GIF files;
+- ShareX: Reduce video sizes;
+- Browsers: LT browser, ResponsivelyApp, SeaMonkey, Waterfox Classic, Firefox ESR, LibreWolf, Chromium;
 
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Getting Started & Usage
+You can clone this repo to get a copy of the project.
 
-A live version is also available [here](https://###).
-
-[//]: # (This section typically is brief and will list the pre-requisites that the user must have in order to start using the project code. This section can be similar or be combined with the Installation section. {Ex: Must have node -v})
-
-## Installing
-Installation instructions.
-
-[//]: # (This is where you will list the full instructions for users on how they can install and start using your project. This should include multiple steps and have detailed descriptions and outcomes for users. It is important to take your time and write these steps as thoroughly as possible. This will help users a lot and will help prevent users from coming back and asking follow-up questions.)
-
-## Usage
-A step by step series of examples that tell you how to get a development env running.
-
-[//]: # (This may be the most platform independent comment)
-
-## Other Instructions, Specifications, Attributes, or Project Info
-This section(s) can include any other relevant project information.
-
-[//]: # (This can include information specific to a particular OS or Framework {Ex: Linux, React, etc}. Certain projects have specific instructions and information that may need to have their own separate sections. As you develop your project you will get a better idea of what you need to include in your README and how to structure it.)
-
-## Contributing
-Contributors names.
-
-[//]: # (It is important to list all the names and information of the people who've contributed to the project. Be sure to include their GitHub Profile Name and any other social media they may want to have listed. There are some cool markdown contributing badges that I will list in the Good Resources below.)
+A live version is also available [check here](https://###) or [check here](https://###).
 
 ## Acknowledgements
 
@@ -209,33 +200,11 @@ Contributors names.
 
 ## Licence
 
-[//]: # (Choose a license for your project. To learn more about license's check out choosealicense.com.)
-
-<details>
-	<summary>Optional: Additional Sections</summary>
-	
-	## How to Contribute to the Project
-	
-	[//]: # (Add ways that that developers can contribute to the project.)
-	
-	## Tests
-	
-	[//]: # (Write tests for your application and then provide examples on how to run them.)
-	
-	## Examples
-	
-	[//]: # (You really go the extra mile when you provide examples of your code/application. This could be a screenshot, code block, video, webpage, etc. This can be really helpful to your users.)
-	
-	## Badges
-	
-	[//]: # (Try adding some cool markdown badges! There are badges at sites like shields.io and they include important code monitoring and other tracking info. Check out the Good Resources section below.)
-	
-</details>
+This project is licensed under the GNU General Public License v3.0 or later. [Learn more](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
 
 
 
 
 
-[//]: # (This may be the most platform independent comment)
 
 [//]: # (This may be the most platform independent comment)
