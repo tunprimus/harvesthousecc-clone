@@ -1,5 +1,7 @@
 // @ts-check
 
+const CACHE_SIZE = 5;
+
 /**
  * Function to update the videos displayed on the webpage
  * Modified from
@@ -18,7 +20,7 @@ const updateIframeVideos = (iframe, channelId, requestOptions) => {
   fetch(reqURL, requestOptions)
     .then(response => response.json())
     .then(result => {
-      localStorage.setItem('rev-channel-key', JSON.stringify(result));
+      localStorage.setItem('rev-channel-key', JSON.stringify(result.slice(0, CACHE_SIZE)));
       const videoNumber = (iframe.getAttribute('video-number') ? Number(iframe.getAttribute('video-number')) : 0);
       const link = result.items[videoNumber].link;
       const videoTitle = result.items[videoNumber].title;
