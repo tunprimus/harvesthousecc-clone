@@ -2,12 +2,14 @@
 This is a clone of the HarvestHouse Christian Centre; in an attempt to move the original website to a lighter stack; moving away from Wordpress and heavy dose of inline scripts on the front-page.
 This will result in faster page load and reduced data use for both users and developers.
 
+
 ## Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Acknowledgement](#acknowledgement)
 - [Licence](#licence)
+
 
 ## About / Project Description
 Attempt to rebuild the organisation website using proven lightweight and backward compatible technologies.
@@ -34,7 +36,9 @@ Thus:
 - Minimise JavaScript usage and prefer vanilla JavaScript;
 - Prefer ES6 or ES5 syntax and features to ensure widespread compatibilities;
 - Use JSDoc comments for static type analysis if need be; in order to negate the use of Typescript language;
-- Aim for JAMstack to reduce hosting cost for the organisation.
+- Have default iframe videos and update them by fetching latest videos from Rev's YouTube channel if JavaScript is available;
+- Aim for JAMstack to reduce hosting cost for the organisation;
+
 
 ### Project Structure
 
@@ -182,21 +186,38 @@ Thus:
 
 ```
 
-### Tools and Libraries
+### Technology, Tools and Libraries
 
+- HTML5, CSS3 and vanilla JavaScript;
 - XnConvert: Batch conversion of original images to different resolutions;
 - GifCurry: Create animated GIF files;
 - ShareX: Reduce video sizes;
 - Browsers: LT browser, ResponsivelyApp, SeaMonkey, Waterfox Classic, Firefox ESR, LibreWolf, Chromium;
 
+
 ## Getting Started & Usage
-You can clone this repo to get a copy of the project.
+Clone this repo and open the index.html file in the browser or with a live server.
 
 A live version is also available [check here](https://###) or [check here](https://###).
 
+
+## Future Implementations
+
+1. Local storage of fetch results with subsequent retrieval from this storage.
+2. Make fetch call only once a day.
+3. Add upcoming events section to homepage.
+4. Add blog posts using markdown and frontend parser.
+5. Create pages for each campuses and fetch contents from social media pages to update content.
+
+
 ## Acknowledgements
 
-[//]: # (Similar to Contributing it is important to include all the sources that helped you complete this project. It's always good to give credit where credit is due.)
+- Chris Ferdinandi [Building with the grain of the web](https://gomakethings.com)
+- Julia Furst Morgado [Update iframe videos displayed](https://dev.to/juliafmorgado/automatically-embed-latest-youtube-videos-on-your-website-with-javascript-step-by-step-2i5e)
+- [Responsive Drop-Down Menu In Pure CSS (NO Javascript)](https://code-boxx.com/simple-css-drop-down-menu/)
+- [3 Steps Simple Responsive Hamburger Menu In Pure CSS](https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/)
+- [Breaking to a new row with flexbox](https://tobiasahlin.com/blog/flexbox-break-to-new-row/)
+
 
 ## Licence
 
