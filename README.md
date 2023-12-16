@@ -198,7 +198,7 @@ Thus:
 ## Getting Started & Usage
 Clone this repo and open the index.html file in the browser or with a live server.
 
-A live version is also available [check here](https://tunprimus.gitlab.io/harvesthousecc-clone/) or [here](http://tiny.cc/d0sivz).
+A live version is also available [check here](https://tunprimus.gitlab.io/harvesthousecc-clone/) or [http://tiny.cc/d0sivz](http://tiny.cc/d0sivz).
 
 
 ## Future Implementations
