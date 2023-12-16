@@ -23,7 +23,7 @@ const updateIframeVideos = (iframe, channelId, requestOptions) => {
       const link = result.items[videoNumber].link;
       const videoTitle = result.items[videoNumber].title;
       const id = link.substr(link.indexOf('=') + 1);
-      iframe.setAttribute('src', `https://youtube.com/embed/${id}?controls=0&autoplay=1`);
+      iframe.setAttribute('src', `https://youtube.com/embed/${id}?controls=0&autoplay=0`);
       iframe.setAttribute('title', `${videoTitle}`);
     })
     .catch(err => console.error('Error:', err));
