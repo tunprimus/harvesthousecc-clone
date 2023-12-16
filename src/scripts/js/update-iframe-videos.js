@@ -20,7 +20,7 @@ const updateIframeVideos = (iframe, channelId, requestOptions) => {
   fetch(reqURL, requestOptions)
     .then(response => response.json())
     .then(result => {
-      localStorage.setItem('rev-channel-key', JSON.stringify(result.slice(0, CACHE_SIZE)));
+      localStorage.setItem('rev-channel-key', JSON.stringify(result));
       const videoNumber = (iframe.getAttribute('video-number') ? Number(iframe.getAttribute('video-number')) : 0);
       const link = result.items[videoNumber].link;
       const videoTitle = result.items[videoNumber].title;
