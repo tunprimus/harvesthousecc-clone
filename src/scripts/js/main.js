@@ -12,7 +12,11 @@ const requestOptions = {
   redirect: 'follow',
 };
 
-const sermonIframeElements = document.getElementsByClassName('sermon-iframe');
-for (let i = 0; i < sermonIframeElements.length; i++) {
-  updateIframeVideos(sermonIframeElements[i], REV_CHANNEL_ID, requestOptions);
+function getRecentSermonVideos () {
+  const sermonIframeElements = document.getElementsByClassName('sermon-iframe');
+  for (let i = 0; i < sermonIframeElements.length; i++) {
+    updateIframeVideos(sermonIframeElements[i], REV_CHANNEL_ID, requestOptions);
+  }
 }
+
+document.addEventListener('DOMContentLoaded', getRecentSermonVideos);
