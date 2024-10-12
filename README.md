@@ -186,9 +186,10 @@ Thus:
 
 ```
 
-### Technology, Tools and Libraries
+### Technology, Techniques, Tools and Libraries
 
 - HTML5, CSS3 and vanilla JavaScript;
+- HTML-first approach, HTML-CSS only navigation menu, responsive media, font caching, BEM CSS, fetch API, localStorage;
 - XnConvert: Batch conversion of original images to different resolutions;
 - GifCurry: Create animated GIF files;
 - ShareX: Reduce video sizes;
